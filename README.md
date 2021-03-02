@@ -38,6 +38,9 @@ Your data will remain in the container while you don't delete it, and you can re
 
 ## Future TO-DOs
 Add sunshine and moonlight to the container for remote streaming
+
 Fix audio problems
+
 Automate some of the winecfg setup/app install with flags
+
 Wait patiently for WSL to get their stuff together so I can make this work for Windows hosts too
