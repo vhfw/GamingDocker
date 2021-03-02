@@ -23,7 +23,7 @@ RUN	dpkg --add-architecture i386 && \
 	add-apt-repository ppa:graphics-drivers/ppa && \
 	wget -nc https://dl.winehq.org/wine-builds/winehq.key && apt-key add winehq.key && add-apt-repository https://dl.winehq.org/wine-builds/ubuntu/ && \
 	apt-get update && \
-	apt-get install -y --no-install-recommends initramfs-tools nvidia-460 cuda-drivers && \
+	apt-get install -y --no-install-recommends initramfs-tools nvidia-driver-455 cuda-drivers && \
 	apt-get install -y --no-install-recommends winehq-stable cabextract unzip p7zip zenity && \
 	wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks && chmod +x winetricks && mv winetricks /usr/local/bin && \
 	apt-get install -y --no-install-recommends winbind && \
