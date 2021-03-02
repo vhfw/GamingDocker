@@ -4,7 +4,10 @@ My take on gaming in Docker with Nvidia passthrough for Linux. Inspired by weban
 
 This docker setup works on Windows too, but requires some dependencies from the Windows and Nvidia Insider Programs to work with WSL2. Finger's crossed that it eventually makes it into public release!
 
-As a side note, while Docker for Windows makes it very easy to do gpu pass-through now, it doesn't support GUI applications. The GPU is simply for heavy computation. This forces us to use Wine and WSL/Docker for Linux directly. Either way, it is better than spinning up a docker to run KVM/QEMU Windows VMs, and Wine has come a long way.
+## Side Note
+While Docker for Windows makes it very easy to do gpu pass-through now, it doesn't support GUI applications. The GPU is simply for heavy computation. This forces us to use Wine and WSL/Docker for Linux directly. Either way, it is better than spinning up a docker to run KVM/QEMU Windows VMs, and Wine has come a long way.
+
+If you are using WSL, you will need XLaunch or another type of X11 software on the Windows host to give Docker somewhere to send display data.
 
 ### Audio
 Due to a bunch of changes with pulseaudio packages, this has been put on hold for a bit. Should be fixed in the next release.
