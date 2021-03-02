@@ -1,6 +1,6 @@
 # GamingDocker
 
-My take on gaming in Docker with Nvidia passthrough for Linux. Inspired by webanck/docker-wine-steam from a couple of years ago. This one is more up to date.
+My take on gaming in Docker with Nvidia passthrough for Linux. Inspired by webanck/docker-wine-steam from a couple of years ago, this one is more up to date.
 
 This docker setup works on Windows too, but requires some dependencies from the Windows and Nvidia Insider Programs to work with WSL2. Finger's crossed that it eventually makes it into public release!
 
@@ -30,9 +30,7 @@ It will open the Wine configuration tool `winecfg`.
 
 In the Graphics tab, disable windows decorations and set screen resolution.
 
-Wine will then run the Steam setup.
-
-Before playing any game, be sure to turn the Steam overlay off (uncheck Steam->Settings->In-Game->Enable the Steam Overlay) because it's not supported by Wine.
+Wine will then run the Steam setup. Replace the SteamSetup.exe with any binary you wish to install.
 
 ## Subsequent uses and data flow
 After the installation is finished, you can leave the container typing `exit` or using the keys `Ctrl+D`.
